@@ -6,10 +6,29 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Kliknij mnie" HorizontalAlignment="Left" Height="188" Margin="149,91,0,0" VerticalAlignment="Top" Width="139" Name="button_add" Click="button_add_Click" FontSize="20" FontStyle="Italic"/>
-        <Label Content="0" HorizontalAlignment="Left" Height="107" Margin="574,159,0,0" VerticalAlignment="Top" Width="65" Name="counter_label" FontSize="30" Background="AliceBlue"/>
-
+    <Grid Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button  HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "1" Grid.Column="0" Name="button1" FontSize="64" Click="button_Click" FontWeight="UltraBold" Foreground="Black"/>
+        <Button  HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "1" Grid.Column="1" Name="button2" FontSize="64" Click="button_Click" FontWeight="UltraBold" Foreground="Black"/>
+        <Button  HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "1" Grid.Column="2" Name="button3" FontSize="64" Click="button_Click" FontWeight="UltraBold" Foreground="Black"/>
+        <Button  HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "2" Grid.Column="0" Name="button4" FontSize="64" Click="button_Click" FontWeight="UltraBold" Foreground="Black"/>
+        <Button  HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "2" Grid.Column="1" Name="button5" FontSize="64" Click="button_Click" FontWeight="UltraBold" Foreground="Black"/>
+        <Button  HorizontalAlignment="Left" Height="119" Margin="10,11,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "2" Grid.Column="2" Name="button6" FontSize="64" Click="button_Click" FontWeight="UltraBold" Foreground="Black"/>
+        <Button  HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "3" Grid.Column="0" Name="button7" FontSize="64" Click="button_Click" FontWeight="UltraBold" Foreground="Black"/>
+        <Button  HorizontalAlignment="Left" Height="119" Margin="10,11,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "3" Grid.Column="1" Name="button8" FontSize="64" Click="button_Click" FontWeight="UltraBold" Foreground="Black"/>
+        <Button  HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "3" Grid.Column="2" Name="button9" FontSize="64" Click="button_Click" FontWeight="UltraBold" Foreground="Black"/>
+        <Button  Content="Nowa gra" HorizontalAlignment="Left" Height="44" Margin="10,0,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "0" Grid.Column="0"  Background="Aqua" FontSize="20" Click="Button_Click_1"/>
+        <Button  HorizontalAlignment="Left" Height="44" Margin="10,0,0,0" VerticalAlignment="Top" Width="244" Grid.Row = "0" Grid.Column="2" Background="Aqua" FontSize="20" Name="whichPlayerButton"/>
 
     </Grid>
 </Window>
